@@ -31,7 +31,7 @@ namespace Fox
             InitializeComponent();
 
             // Set title of window to the name of the file
-            this.Title = $"Tagging {_file.Name}";
+            this.Title = $"Fox - Tagging {_file.Name}{_file.Extension}";
 
             PopulateTagList();
         }
@@ -122,6 +122,8 @@ namespace Fox
 
                 ToggleSaveButton();
             }
+
+            NewTagTextBox.Text = string.Empty;
         }
 
         private void TagItemCheckBox_Checked(object sender, RoutedEventArgs e)

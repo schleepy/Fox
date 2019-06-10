@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Fox"
         xmlns:viewmodels="clr-namespace:Fox.Models.Entities"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="350">
+        Title="Fox" Height="400" Width="350" ResizeMode="NoResize" Icon="Icon.ico">
     <Grid>
         <DockPanel>
             <Grid DockPanel.Dock="Top" Margin="6,5,6,5">
