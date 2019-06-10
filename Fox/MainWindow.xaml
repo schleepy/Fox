@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Fox"
+        xmlns:viewmodels="clr-namespace:Fox.Models.Entities"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="350">
     <Grid>
@@ -12,7 +13,7 @@
                 <TextBox x:Name="NewTagTextBox" HorizontalAlignment="Stretch" Margin="0,0,70,0" KeyDown="NewTagTextBox_KeyDown"/>
                 <Button x:Name="AddNewTagButton" Content="Add" HorizontalAlignment="Right" MinWidth="70" Click="AddNewTagButton_Click"></Button>
             </Grid>
-            <Button x:Name="SaveButton" Content="Save changes to file" DockPanel.Dock="Bottom" VerticalAlignment="Bottom" Margin="6,0,6,5" Click="SaveButton_Click"></Button>
+            <Button x:Name="SaveButton" IsEnabled="False" Content="Save changes" DockPanel.Dock="Bottom" VerticalAlignment="Bottom" Margin="6,0,6,5" Click="SaveButton_Click"></Button>
             <GroupBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <GroupBox.Header>
                     Tags

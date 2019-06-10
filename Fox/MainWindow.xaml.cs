@@ -21,11 +21,6 @@ namespace Fox
         public ObservableCollection<TagItem> _tagItems;
         private File _file;
 
-        /*public MainWindow()
-        {
-            InitializeComponent();
-        }*/
-
         public MainWindow(string filePath)
         {
             // Get file as a workable entity
@@ -41,6 +36,9 @@ namespace Fox
             PopulateTagList();
         }
 
+        /// <summary>
+        /// Populates the list of tags in the view
+        /// </summary>
         public void PopulateTagList()
         {
             if (!System.IO.File.Exists(Properties.Settings.Default.TagStorage))
@@ -121,12 +119,9 @@ namespace Fox
                 }
 
                 this._file.AddTag(newTag);
+
+                ToggleSaveButton();
             }
-        }
-
-        private void AddNewTag(string tag)
-        {
-
         }
 
         private void TagItemCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -134,6 +129,8 @@ namespace Fox
             var item = (TagItem)((System.Windows.Controls.CheckBox)sender).DataContext;
 
             this._file.AddTag(item.Tag);
+
+            ToggleSaveButton();
         }
 
         private void TagItemCheckBox_Unchecked(object sender, RoutedEventArgs e)
@@ -141,15 +138,33 @@ namespace Fox
             var item = (TagItem)((System.Windows.Controls.CheckBox)sender).DataContext;
 
             this._file.RemoveTag(item.Tag);
+
+            ToggleSaveButton();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            // Sorts the tags
             this._tagItems.Sort();
 
+            // Saves the file
             this._file.Save();
+
+            ToggleSaveButton();
         }
 
+        /// <summary>
+        /// Toggles the save button depending on if changes have been made
+        /// </summary>
+        public void ToggleSaveButton()
+        {
+            SaveButton.IsEnabled = this._file.Changed;
+            SaveButton.Content = this._file.Changed ? "Save changes" : "Changes have been saved";
+        }
+
+        /// <summary>
+        /// When the user presses enter on the new tag input it calls the same method as if you'd have pressed the add new tag button
+        /// </summary>
         private void NewTagTextBox_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == Key.Enter)

@@ -11,6 +11,7 @@ namespace Fox.Models.Entities
         public string FullPath { get; set; }
         public string PathToDirectory { get; set; }
         public List<string> Tags { get; set; }
+        public bool Changed { get; set; }
 
         public File(string filePath)
         {
@@ -29,12 +30,16 @@ namespace Fox.Models.Entities
         {
             if (!this.Tags.Contains(tag))
                 this.Tags.Add(tag);
+
+            this.Changed = true;
         }
 
         public void RemoveTag(string tag)
         {
             if (this.Tags.Contains(tag))
                 this.Tags.Remove(tag);
+
+            this.Changed = true;
         }
 
         public void Save()
@@ -45,6 +50,8 @@ namespace Fox.Models.Entities
 
             this.Name = this.Name = this.GetFileNameWithoutTagsAndExtension(newPath);
             this.FullPath = newPath;
+
+            this.Changed = false;
         }
 
         public override string ToString()
