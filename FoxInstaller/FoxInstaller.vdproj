@@ -1,0 +1,1768 @@
+﻿"DeployProject"
+{
+"VSVersion" = "3:800"
+"ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
+"IsWebType" = "8:FALSE"
+"ProjectName" = "8:FoxInstaller"
+"LanguageId" = "3:1033"
+"CodePage" = "3:1252"
+"UILanguageId" = "3:1033"
+"SccProjectName" = "8:"
+"SccLocalPath" = "8:"
+"SccAuxPath" = "8:"
+"SccProvider" = "8:"
+    "Hierarchy"
+    {
+        "Entry"
+        {
+        "MsmKey" = "8:_4A3A11D01C80436EBA716A9F045B7C7D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DC5019E91159C75B7C6CE958BC8EE4D3"
+        "OwnerKey" = "8:_4A3A11D01C80436EBA716A9F045B7C7D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4A3A11D01C80436EBA716A9F045B7C7D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_DC5019E91159C75B7C6CE958BC8EE4D3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+    }
+    "Configurations"
+    {
+        "Debug"
+        {
+        "DisplayName" = "8:Debug"
+        "IsDebugOnly" = "11:TRUE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:Debug\\FoxInstaller.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
+        }
+        "Release"
+        {
+        "DisplayName" = "8:Release"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:TRUE"
+        "OutputFilename" = "8:Release\\FoxInstaller.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
+        }
+    }
+    "Deployable"
+    {
+        "CustomAction"
+        {
+        }
+        "DefaultFeature"
+        {
+        "Name" = "8:DefaultFeature"
+        "Title" = "8:"
+        "Description" = "8:"
+        }
+        "ExternalPersistence"
+        {
+            "LaunchCondition"
+            {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_05B219D6CEE74DF9B253920754E92C4D"
+                {
+                "Name" = "8:.NET Framework"
+                "Message" = "8:[VSDNETMSG]"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.6.1"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=671728"
+                }
+            }
+        }
+        "File"
+        {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DC5019E91159C75B7C6CE958BC8EE4D3"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_DC5019E91159C75B7C6CE958BC8EE4D3"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Net.Http.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F5AF7111A29E41B2B6B6F39B926FD9FE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+        }
+        "FileType"
+        {
+        }
+        "Folder"
+        {
+            "{1525181F-901A-416C-8A58-119130FE478E}:_61A4B88605D34197BB91804C95976416"
+            {
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_73A798A6130A48739560C79F5A5EBCE8"
+            {
+            "Name" = "8:#1919"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:ProgramMenuFolder"
+                "Folders"
+                {
+                }
+            }
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_F5AF7111A29E41B2B6B6F39B926FD9FE"
+            {
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "Name" = "8:#1925"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:TARGETDIR"
+                "Folders"
+                {
+                }
+            }
+        }
+        "LaunchCondition"
+        {
+        }
+        "Locator"
+        {
+        }
+        "MsiBootstrapper"
+        {
+        "LangId" = "3:1033"
+        "RequiresElevation" = "11:FALSE"
+        }
+        "Product"
+        {
+        "Name" = "8:Microsoft Visual Studio"
+        "ProductName" = "8:Fox"
+        "ProductCode" = "8:{7D349499-E6FE-45A2-90A2-D1112926D4EB}"
+        "PackageCode" = "8:{137AE89E-F53D-4197-83D3-3A89BCE8CB1C}"
+        "UpgradeCode" = "8:{7291C687-C780-491A-93C9-D0D06A05EC3D}"
+        "AspNetVersion" = "8:4.0.30319.0"
+        "RestartWWWService" = "11:FALSE"
+        "RemovePreviousVersions" = "11:FALSE"
+        "DetectNewerInstalledVersion" = "11:TRUE"
+        "InstallAllUsers" = "11:FALSE"
+        "ProductVersion" = "8:1.0.0"
+        "Manufacturer" = "8:Hivemind Software"
+        "ARPHELPTELEPHONE" = "8:"
+        "ARPHELPLINK" = "8:"
+        "Title" = "8:Fox"
+        "Subject" = "8:"
+        "ARPCONTACT" = "8:Schleepy"
+        "Keywords" = "8:"
+        "ARPCOMMENTS" = "8:A simple tool to tag images on windows"
+        "ARPURLINFOABOUT" = "8:https://github.com/schleepy/"
+        "ARPPRODUCTICON" = "8:"
+        "ARPIconIndex" = "3:0"
+        "SearchPath" = "8:"
+        "UseSystemSearchPath" = "11:TRUE"
+        "TargetPlatform" = "3:0"
+        "PreBuildEvent" = "8:"
+        "PostBuildEvent" = "8:"
+        "RunPostBuildEvent" = "3:0"
+        }
+        "Registry"
+        {
+            "HKLM"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_97EEC27C37D7478D8EB23EA590CA99B5"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_99C81CC6EE8B4C5EBCC7C589F6EBC5FA"
+                            {
+                            "Name" = "8:Classes"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_76B5B5E04F684CA1BF63D65DA6EBF5E9"
+                                    {
+                                    "Name" = "8:SystemFileAssociations"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_132B78826C364A72997F25FD87FB530B"
+                                            {
+                                            "Name" = "8:.jpeg"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FB8A8A1A8B5843BDACE279D69516C4A6"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_73684C5DA31A41E19665258F4A5FB31F"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_20AA96E523D04C9BAD7CCB59ECCAED47"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_09A408B587414F18AF3E9D7AECFC28DB"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_22819CACD62847008056A8B5764C2D9F"
+                                            {
+                                            "Name" = "8:.gif"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_963E4CD4AAEF48D78644AB3EA58440AD"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_ACCF9F96EBEA4F309F287498B13309B9"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_35B427A7D0BA4D328C4F7BC7B22EAFC5"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CC152E73AF6E41C1A1436EE14872A0AE"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_26964D93F9AD4D18B1D6EE804DBE401A"
+                                            {
+                                            "Name" = "8:.jp2"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_DBD52C8A796E4F1EA5424349E354697B"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_043D8AEF159D4F2D95F1A217BC023F54"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_47580D1391134523AC96D46EF04BC38A"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_737308352D1A495781CAB5C394F7383E"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2946D3DB73BB4D10A8BE90C6E51402A9"
+                                            {
+                                            "Name" = "8:.j2c"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_B74D0DF721B542D8AF53D65AF9DBD957"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_06B12EC1D4344797BBBBDF39F07B9CC9"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_35135882455043F0ADE9E270BB853950"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C9D00C3831FF430694BA0261DE92070A"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2A476E67E2A942E2AEEBC4C9FA6B0512"
+                                            {
+                                            "Name" = "8:.tiff"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_64006DCBB3B245E185555D8A45E3DAF5"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_40289FAED4E04571AF3854B0F838D366"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_95543E27CD5744C0AFC8A4CB635963E1"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_689199284D4F4733874FCBAE27828E1E"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_3457C22E631840E29C19147DCB0438C6"
+                                            {
+                                            "Name" = "8:.tif"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_505737DD169540EBBE1D6E53FED653C3"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_734FC7E776204814BD15A33FEB7FA950"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4992A71672954F21BA33D449157E81A1"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_6EE2A42D54F6418DB0B3D820F26B3CF6"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_705B961621104E7BA58EEB38E7327CC6"
+                                            {
+                                            "Name" = "8:.jpx"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D4E7D43E94F241FEB14873179FEEF10E"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_EFB5F95C89B646B2817E755CB3CEDEB4"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1FC5BBD467F343BDA1CB61CC70A16538"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_676B5945A4074E41A6E57E8B11D93A26"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_92F08CC5E15A41A4BA4AAC8ABCCC8CDD"
+                                            {
+                                            "Name" = "8:.jfif"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2EFA55F807624EA3AB396566CD080C7D"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_BCBDF613AA5A4D199E331EB3FB8AE7BD"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_63BE607D540D4F298C0CBF8909397A5A"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_169625A42EB642A694F34442709246A2"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A1DF78C127484873B0CA32FB574ACE2E"
+                                            {
+                                            "Name" = "8:.jif"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C7EFA5BC1345460F84513AB1D11B5416"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_610E768D95674598881D5E585725D855"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_5787303635594FAD9DB952F95BFF6A6C"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_83AB3E8BF03841499D5E6792B16C72B7"
+                                                                            {
+                                                                            "Name" = "8:New Value #1"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:"
+                                                                            }
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B016BC2525244167A9365AB00D853534"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_AFB00EF7A4FD4E859F1141021F39CBDC"
+                                            {
+                                            "Name" = "8:.pcd"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_2253C84F68204979A7EBCD1FA69683AB"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_83D763C4BE45451DB89571E15D5254F9"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_9CAA666A0DF64165BDBF4EF23256E885"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_9401EE5B548D444989920544238ACEEE"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_B51E157D8FDD4310ACB679B9B4782646"
+                                            {
+                                            "Name" = "8:.pdf"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_22EE1D731B3142078F0C33246563C578"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_AF183B9388B14CAD850A08E973E728FB"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C9F3C567684F4551A890DB77D017921A"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_FD82D6C9FA78445FB9A3018D01008B8F"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_BE55B0A2248246A091CA392B83D64CF9"
+                                            {
+                                            "Name" = "8:.fpx"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4C3937BD2F384F6D891F0FA34314DA80"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_03271FB4BD734467B8F03541568398A6"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FFB96EEA8A4E461BB36237EA75213A4C"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CD9C5A12AF3C4EC9B5D22DF67391B8AF"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D1987CC4618740FC9F6862AC40F44DEF"
+                                            {
+                                            "Name" = "8:.jpg"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_174EC646B3284ECC8262D1883BE7F9B0"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_494AAC742C864573B02CF710716EC5CD"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8E1CFB5220F446F99933E6D50834BBEC"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_0AFB6448F1FB4386B8FDD35A8725D78F"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_DF62C199EE2E4E318B11CD9FB96BC90D"
+                                            {
+                                            "Name" = "8:.png"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_476792CDD8F5411F9914BFE1A3F1D673"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_47C9A67C30EA492880911E7746C64F74"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_EB8A59B279654BD9803D5766D697C4EB"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E0DA1BC74483462FAFAA08B48DF8B1C7"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_E7D1FEF7BE7244EBBD231184691F4838"
+                                            {
+                                            "Name" = "8:.j2k"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A3CC14FF46C349F6926A67919669AADE"
+                                                    {
+                                                    "Name" = "8:Shell"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_CCA44497D9384CC89CAE3FDF02032D31"
+                                                            {
+                                                            "Name" = "8:Tag"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:TRUE"
+                                                            "DeleteAtUninstall" = "11:TRUE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_DA65AC3F3ED44574B64FB01216E862D7"
+                                                                    {
+                                                                    "Name" = "8:command"
+                                                                    "Condition" = "8:"
+                                                                    "AlwaysCreate" = "11:TRUE"
+                                                                    "DeleteAtUninstall" = "11:TRUE"
+                                                                    "Transitive" = "11:FALSE"
+                                                                        "Keys"
+                                                                        {
+                                                                        }
+                                                                        "Values"
+                                                                        {
+                                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_BB0E04230F7145C09AE823A7B58428AF"
+                                                                            {
+                                                                            "Name" = "8:"
+                                                                            "Condition" = "8:"
+                                                                            "Transitive" = "11:FALSE"
+                                                                            "ValueTypes" = "3:1"
+                                                                            "Value" = "8:C:\\Program Files (x86)\\Hivemind Software\\Fox\\Fox.exe \"%1\""
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                }
+                                                            }
+                                                        }
+                                                        "Values"
+                                                        {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A8699E3F17DA43F692C83EFE30B7B66D"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCU"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FDFC35AF8CCE41728638B20B75987EC1"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_AD5C163C60684480AF83AA295346DA8C"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCR"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKPU"
+            {
+                "Keys"
+                {
+                }
+            }
+        }
+        "Sequences"
+        {
+        }
+        "Shortcut"
+        {
+        }
+        "UserInterface"
+        {
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_24AC227EF475495EB3067B04B6E68602"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:2"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_33C9B310AFA648C0A6E20918DEA48BDB"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:Confirm Installation"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B46FCB66F9E4423A961F43CB64D2CA59"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Welcome"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_D6220FC4DFFF4D94962DC7BDAB1FCFC6"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:Installation Folder"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_59C2F38559834EADAD8EC4F987990BC3"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_6605E22E48C3403C86AF088DB19CDFF5"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2A017FF9BB08454DB35F9996DD0F64AA"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Finished"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_7507EE544DF2493D88D497ED1DE8CD0D"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:2"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_770677CBB9A94BC5A6F22C8020FCFCA2"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Progress"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_79D5D1FD86DD43C9814A61FE41A81063"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:1"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_0FECF7EECEC447479E8F3914BCC1A705"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Finished"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_83A5836431A1487DBF18ABAA5F326063"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_A328D9DD8E0F4604B9919DD9AA57353F"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:1"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_63319C6391B34C52B0CF1E2E9281D42D"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:Installation Folder"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "InstallAllUsersVisible"
+                            {
+                            "Name" = "8:InstallAllUsersVisible"
+                            "DisplayName" = "8:#1059"
+                            "Description" = "8:#1159"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_A10594786BAC43DFA9DF8F823D04E5D1"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Welcome"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AE1AF608A3D3479F97465DE3D173C82B"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:Confirm Installation"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_A5083EAD1B0F47C9828CB8839B8458D3"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_683BBAFD6D70465F8FFA28EEB06CE647"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Progress"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        "MergeModule"
+        {
+        }
+        "ProjectOutput"
+        {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4A3A11D01C80436EBA716A9F045B7C7D"
+            {
+            "SourcePath" = "8:..\\Fox\\obj\\Release\\Fox.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F5AF7111A29E41B2B6B6F39B926FD9FE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{CBED6C81-6E69-49E2-B911-4A7FA79377E6}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+        }
+    }
+}

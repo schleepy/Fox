@@ -12,6 +12,8 @@ namespace Fox
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            CreateApplicationDataFolders();
+
             if (e.Args.Length != 0)
             {
                 var file = e.Args[0];
@@ -22,15 +24,20 @@ namespace Fox
 
                 }
 
-                Directory.SetCurrentDirectory(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-                
+                //Directory.SetCurrentDirectory($"{Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)}");
+
                 var mainWindow = new MainWindow(file);
                 mainWindow.Show();
             }
             else
             {
-                Environment.Exit(-1);
+                MessageBox.Show("The Fox tagger can only be opened with an image file");
             }
+        }
+
+        private void CreateApplicationDataFolders()
+        {
+            Directory.CreateDirectory(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"Hivemind Software\\Fox"));
         }
     }
 }

@@ -59,9 +59,9 @@ namespace Fox.Models.Entities
             this.Tags.Sort(); // Sort the tags
 
             if (this.Tags.Count() != 0) 
-                return $"{this.PathToDirectory}\\{this.Name}_{string.Join("_", this.Tags.ToArray())}{this.Extension}";
+                return Path.Combine(this.PathToDirectory, $"{this.Name}_{string.Join("_", this.Tags.ToArray())}{this.Extension}");
             else
-                return $"{this.PathToDirectory}\\{this.Name}{this.Extension}";
+                return Path.Combine(this.PathToDirectory, $"{this.Name}{this.Extension}");
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
 using MessageBox = System.Windows.Forms.MessageBox;
+using System.Reflection;
 
 namespace Fox
 {
@@ -20,6 +21,7 @@ namespace Fox
         public List<string> _tags;
         public ObservableCollection<TagItem> _tagItems;
         private File _file;
+        private string _tagLibraryPath;
 
         public MainWindow(string filePath)
         {
@@ -27,6 +29,8 @@ namespace Fox
             this._file = new File(filePath);
 
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
+
+            this._tagLibraryPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\Hivemind Software\\Fox\\{Properties.Settings.Default.TagStorage}";
 
             InitializeComponent();
 
@@ -41,15 +45,15 @@ namespace Fox
         /// </summary>
         public void PopulateTagList()
         {
-            if (!System.IO.File.Exists(Properties.Settings.Default.TagStorage))
+            if (!System.IO.File.Exists(this._tagLibraryPath))
             {
-                using (var tagFile = System.IO.File.Create((Properties.Settings.Default.TagStorage)))
+                using (var tagFile = System.IO.File.Create((this._tagLibraryPath)))
                 {
                     tagFile.Close();
                 }
             }
 
-            this._tags = System.IO.File.ReadAllLines(Properties.Settings.Default.TagStorage).ToList();
+            this._tags = System.IO.File.ReadAllLines(this._tagLibraryPath).ToList();
 
             var difference = _file.Tags.Except(this._tags);
 
@@ -88,7 +92,7 @@ namespace Fox
             this._tags.Sort();
 
             // Save the tags to the tag library
-            System.IO.File.WriteAllLines(Properties.Settings.Default.TagStorage, this._tags.ToArray());
+            System.IO.File.WriteAllLines(this._tagLibraryPath, this._tags.ToArray());
         }
 
         private void AddNewTagButton_Click(object sender, RoutedEventArgs e)
