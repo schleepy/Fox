@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Collections.ObjectModel;
 using MessageBox = System.Windows.Forms.MessageBox;
 using System.Reflection;
+using System.Diagnostics;
 
 namespace Fox
 {
@@ -22,9 +23,13 @@ namespace Fox
         public ObservableCollection<TagItem> _tagItems;
         private File _file;
         private string _tagLibraryPath;
+        private Process _photoViewer;
 
         public MainWindow(string filePath)
         {
+            // Start photo viewer
+            this._photoViewer = Process.Start(filePath);
+
             // Get file as a workable entity
             this._file = new File(filePath);
 
@@ -80,7 +85,7 @@ namespace Fox
         /// </summary>
         private void OnProcessExit(object sender, EventArgs e)
         {
-            //SaveTags();
+        
         }
 
         /// <summary>
